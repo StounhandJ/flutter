@@ -18,6 +18,11 @@ class ScreenOne extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 0.4,
                 fit: BoxFit.fill),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset('assets/back.png'),
+              iconSize: 40,
+            ),
             Center(
               child: Transform.scale(
                 scale: 3,
