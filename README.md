@@ -1,9 +1,3 @@
-### Первый шаблон
+### Practical work on flutter for MPT :
 
-![](doc/one.png)
-
-### Второй шаблон
-![](doc/two.png)
-
-### Четвёртый шаблон
-![](doc/four.png)
+## 1. [Создание интерфейсов из трёх макетов](FirstPractical)
