@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_3/components/TextComponent.dart';
+import 'package:first_practical/components/TextComponent.dart';
 
 import 'components/ButtonCircularComponent.dart';
 
