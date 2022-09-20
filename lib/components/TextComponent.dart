@@ -8,6 +8,7 @@ class TextComponent extends StatelessWidget {
     this.fontSize,
     this.fontWeight,
     this.color,
+    this.textAlign,
   });
 // equal to "VoidCallback".
 
@@ -15,13 +16,27 @@ class TextComponent extends StatelessWidget {
   final double? fontSize;
   final FontWeight? fontWeight;
   final Color? color;
+  final TextAlign? textAlign;
 
   @override
   Widget build(BuildContext context) {
     return DefaultTextStyle(
       style: GoogleFonts.lato(
-          fontSize: fontSize, fontWeight: fontWeight, color: color),
-      child: Text(data),
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          textStyle: const TextStyle(),
+          color: color ?? Colors.black),
+      child: Text(
+        data,
+        textAlign: textAlign,
+      ),
     );
+    // return DefaultTextStyle(
+    //   style: const TextStyle(),
+    //   child: Text(
+    //     data,
+    //     textAlign: textAlign,
+    //   ),
+    // );
   }
 }

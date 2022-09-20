@@ -69,9 +69,11 @@ flutter:
     - assets/live.png
     - assets/avatars.png
     - assets/rating.png
-    - assets/text_rating.png
     - assets/bell.png
     - assets/avatar.png
+    - assets/river.png
+    - assets/play.png
+    - assets/ellipsis.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'components/ButtonCircularComponent.dart';
 import 'components/InviteFriendsComponent.dart';
 import 'components/StreamCartComponent.dart';
 import 'components/TextComponent.dart';
@@ -8,9 +9,9 @@ class ScreenOne extends StatelessWidget {
   const ScreenOne({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        color: const Color.fromARGB(255, 1, 196, 255),
+    return Container(
+      color: const Color.fromARGB(255, 1, 196, 255),
+      child: SafeArea(
         child: Stack(
           children: [
             Image.asset('assets/kit.png',
@@ -68,27 +69,17 @@ class ScreenOne extends StatelessWidget {
                             fontSize: 30,
                             fontWeight: FontWeight.w900,
                             color: Colors.black),
-                        ElevatedButton(
-                          style: ButtonStyle(
-                              minimumSize: MaterialStateProperty.all<Size>(
-                                  const Size(130, 40)),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                const Color.fromARGB(255, 250, 246, 245),
-                              ),
-                              shape: MaterialStateProperty.all<
-                                      RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                side: const BorderSide(
-                                  color: Color.fromARGB(255, 254, 122, 21),
-                                  width: 1.0,
-                                ),
-                              ))),
-                          onPressed: () {},
-                          child: const TextComponent('Follow',
+                        const ButtonCircularComponent(
+                          TextComponent('Follow',
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
                               color: Color.fromARGB(255, 254, 122, 21)),
+                          width: 130,
+                          height: 40,
+                          backgroundColor: Color.fromARGB(255, 250, 246, 245),
+                          circular: 10,
+                          sideColor: Color.fromARGB(255, 254, 122, 21),
+                          sideWidth: 1,
                         ),
                         const SizedBox(height: 10),
                         StreamCartComponent(
